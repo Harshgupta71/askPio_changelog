@@ -29,8 +29,8 @@ codeurl: 'https://harshgupta71.github.io/askPio_changelog'
 sections: [
     ['start', 'Getting Started'],
     ['guide', 'User Guide'],
-    ['rm', 'Road Map'],
     ['cl', 'Change Logs'],
+    ['rm', 'Road Map'],
     ['tut', 'Tutorials'],
     ['help', 'Help']
 ]
