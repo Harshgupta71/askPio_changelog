@@ -1,0 +1,66 @@
+# Site title and subtitle. This is used in _includes/header.html
+name: "askPio"
+description: "askPio, Bot, AI, LUIS"
+meta_description: "askPio documentation"
+title: 'askPio'
+subtitle: 'Documentation of askPio'
+content: "https://content.askpio.com/"
+logo: "https://content.askpio.com/logo/logo.png"
+mainurl: 'https://askpio.com'
+appmainurl: 'https://app.askpio.com'
+mailchimp-list: 'https://subwai.us20.list-manage.com/subscribe/post?u=e01c7eea6ace40984a93be00d&amp;id=98ff40b631'
+
+# if you wish to integrate disqus on pages set your shortname here
+disqus_shortname: 'https-blog-subwai-com'
+
+# if you use google analytics, add your tracking id here
+google_analytics_id: 'UA-132318762-1'
+
+# Enable/show navigation. There are there options:
+#   0 - always hide
+#   1 - always show
+#   2 - show only if posts are present
+navigation: 2
+
+# URL to source code, used in _includes/footer.html
+codeurl: 'https://harshgupta71.github.io/askPio_Documentation'
+
+# Default categories (in order) to appear in the navigation
+sections: [
+    ['start', 'Getting Started'],
+    ['guide', 'User Guide'],
+    ['ref', 'Reference'],
+    ['cl', 'Change Logs'],
+    ['tut', 'Tutorials'],
+    ['help', 'Help']
+]
+
+# Keep as an empty string if served up at the root. If served up at a specific
+# path (e.g. on GitHub pages) leave off the trailing slash, e.g. /my-project
+baseurl: ''
+
+# Dates are not included in permalinks
+permalink: none
+
+# Syntax highlighting
+highlighter: rouge
+
+# Since these are pages, it doesn't really matter
+future: true
+
+# Exclude non-site files
+exclude: ['bin', 'README.md']
+
+# Use the kramdown Markdown renderer
+markdown: kramdown
+redcarpet:
+    extensions: [
+        'no_intra_emphasis',
+        'fenced_code_blocks',
+        'autolink',
+        'strikethrough',
+        'superscript',
+        'with_toc_data',
+        'tables',
+        'hardwrap'
+    ]

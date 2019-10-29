@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width">
+
+        <title>{{ site.title }}{% if page.title %} : {{ page.title }}{% endif %}</title>
+        <meta name="description" content="{{ site.meta_description }}">
+        
+        <link rel="apple-touch-icon" sizes="57x57" href="{{ site.content }}favicon/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="{{ site.content }}favicon/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="{{ site.content }}favicon/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="{{ site.content }}favicon/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="{{ site.content }}favicon/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="{{ site.content }}favicon/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="{{ site.content }}favicon/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="{{ site.content }}favicon/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="{{ site.content }}favicon/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192"  href="{{ site.content }}favicon/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="{{ site.content }}favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="{{ site.content }}favicon/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="{{ site.content }}favicon/favicon-16x16.png">
+        <link rel="manifest" href="{{ site.content }}favicon/manifest.json">
+
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+        <!--
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    
+        <link href="https://fonts.googleapis.com/css?family=Righteous%7CMerriweather:300,300i,400,400i,700,700i" rel="stylesheet">
+        
+        -->
+        
+        <link rel="stylesheet" href="{{ site.baseurl }}/css/syntax.css">
+        <link rel="stylesheet" href="{{ site.baseurl }}/css/main.css">
+        <link rel="stylesheet" href="{{ site.baseurl }}/css/screen.css">
+        
+        
+        <!-- start Mixpanel -->
+        <!-- 
+        <script>
+            (function(c,a){if(!a.__SV){var b=window;try{var d,m,j,k=b.location,f=k.hash;d=function(a,b){return(m=a.match(RegExp(b+"=([^&]*)")))?m[1]:null};f&&d(f,"state")&&(j=JSON.parse(decodeURIComponent(d(f,"state"))),"mpeditor"===j.action&&(b.sessionStorage.setItem("_mpcehash",f),history.replaceState(j.desiredHash||"",c.title,k.pathname+k.search)))}catch(n){}var l,h;window.mixpanel=a;a._i=[];a.init=function(b,d,g){function c(b,i){var a=i.split(".");2==a.length&&(b=b[a[0]],i=a[1]);b[i]=function(){b.push([i].concat(Array.prototype.slice.call(arguments,
+        0)))}}var e=a;"undefined"!==typeof g?e=a[g]=[]:g="mixpanel";e.people=e.people||[];e.toString=function(b){var a="mixpanel";"mixpanel"!==g&&(a+="."+g);b||(a+=" (stub)");return a};e.people.toString=function(){return e.toString(1)+".people (stub)"};l="disable time_event track track_pageview track_links track_forms track_with_groups add_group set_group remove_group register register_once alias unregister identify name_tag set_config reset opt_in_tracking opt_out_tracking has_opted_in_tracking has_opted_out_tracking clear_opt_in_out_tracking people.set people.set_once people.unset people.increment people.append people.union people.track_charge people.clear_charges people.delete_user people.remove".split(" ");
+        for(h=0;h<l.length;h++)c(e,l[h]);var f="set set_once union unset remove delete".split(" ");e.get_group=function(){function a(c){b[c]=function(){call2_args=arguments;call2=[c].concat(Array.prototype.slice.call(call2_args,0));e.push([d,call2])}}for(var b={},d=["get_group"].concat(Array.prototype.slice.call(arguments,0)),c=0;c<f.length;c++)a(f[c]);return b};a._i.push([b,d,g])};a.__SV=1.2;b=c.createElement("script");b.type="text/javascript";b.async=!0;b.src="undefined"!==typeof MIXPANEL_CUSTOM_LIB_URL?
+        MIXPANEL_CUSTOM_LIB_URL:"file:"===c.location.protocol&&"//cdn4.mxpnl.com/libs/mixpanel-2-latest.min.js".match(/^\/\//)?"https://cdn4.mxpnl.com/libs/mixpanel-2-latest.min.js":"//cdn4.mxpnl.com/libs/mixpanel-2-latest.min.js";d=c.getElementsByTagName("script")[0];d.parentNode.insertBefore(b,d)}})(document,window.mixpanel||[]);
+        mixpanel.init("0f341aba0104d597b44b35110a6e044a");
+        </script>
+         -->
+        <!-- end Mixpanel -->
+
+    </head>
+    <body>
+        
+        <div class="container">
+            <div class="row">
+                <div id="header" class="col-sm-12">
+                    {% include header.html %}
+                </div>
+            </div>
+
+            <div class="row">
+                {% assign post_count = site.posts|size %}
+                {% if site.navigation != 0 and site.navigation == 1 or post_count > 0 %}
+                    <div id="navigation" class="col-sm-2">
+                        {% include navigation.html %}
+                    </div>
+
+                    <div id="content" class="col-sm-10">
+                        {{ content }}
+                    </div>
+                {% else %}
+                    <div id="content" class="col-sm-12">
+                        {{ content }}
+                    </div>
+                {% endif %}
+            </div>
+
+            {% if page.disqus == 1 %}
+            <div class="row">
+              {% if site.navigation == 1 or post_count > 0 %}
+                <div id="navigation" class="col-sm-2"></div>
+                <div id="disqus" class="col-sm-10">
+                    {% include disqus.html %}
+                </div>
+              {% else %}
+                <div id="disqus" class="col-sm-12">
+                    {% include disqus.html %}
+                </div>
+              {% endif %}
+            </div>
+            {% endif %}
+
+            <div class="row">
+                <div id="footer" class="col-sm-12">
+                    {% include footer.html %}
+                </div>
+            </div>
+        </div>
+
+        <script>
+            function orderNav() {
+                var list,
+                    section,
+                    header,
+                    sections = [],
+                    lists = {},
+                    headers = {};
+                
+                var locationObj = document.location.href;
+                
+                var navUl = document.querySelectorAll('#navigation ul')[0],
+                    navLis = document.querySelectorAll('#navigation ul li');
+
+                if (!navUl) return;
+
+                for (var i = 0; i < navLis.length; i++) {
+                    var order, li = navLis[i];
+
+                    if (li.classList.contains('nav-header')) {
+                        section = li.textContent || li.innerText;
+                        sections.push(section);
+                        headers[section] = li;
+                        continue;
+                    }
+
+                    var link = li.childNodes[0];
+                    if (locationObj && link && locationObj.endsWith(link.getAttribute('href'))) {
+                        li.classList.add('active');
+                    }
+                    
+                    if (!lists[section]) {
+                        lists[section] = [];
+                    }
+
+                    order = parseFloat(li.getAttribute('data-order'))
+                    lists[section].push([order, li]);
+                }
+
+                for (var i = 0; i < sections.length; i++) {
+                    section = sections[i];
+                    list = lists[section].sort(function(a, b) {
+                        return a[0] - b[0];
+                    });
+
+                    if (header = headers[section]) {
+                        navUl.appendChild(header);
+                    }
+                    for (var j = 0; j < list.length; j++) {
+                        navUl.appendChild(list[j][1]);
+                    }
+                }
+            }
+
+            if (document.querySelectorAll) orderNav();
+        </script>
+        {% if site.google_analytics_id != "" %}
+        {% include google_analytics.html %}
+        {% endif %}
+    </body>
+</html>
