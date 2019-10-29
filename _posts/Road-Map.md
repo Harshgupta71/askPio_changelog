@@ -1,0 +1,30 @@
+---
+layout: page
+title: "Road Map"
+category: rm
+date: 2019-10-03 00:00:01
+order: 1
+---
+
+ 
+# Road Map
+
+We are constantly getting feedbacks from our customers to improve askPio. Here, **some** of the features will be implemented in the next versions:
+
+-   ASP.NET Core 3.0 support.
+-   Customizable **dashboard/widget** system.
+-   Session **lock screen**.
+-   Sending **mass notifications/emails** to users.
+-   **Webhook** system.
+-   **Improvements** on current features.
+-   More **tutorials**, **examples** & **video courses**.
+
+We are adding new items here as we clarify them. All these features and
+**much more** will be available also for current customers in their
+upgrade period.
+
+Notes:
+
+- The items on road map are subject to change based on customer
+  feedbacks and our internal decisions.
+
