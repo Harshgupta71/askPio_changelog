@@ -1,9 +1,9 @@
 # Site title and subtitle. This is used in _includes/header.html
 name: "askPio"
 description: "askPio, Bot, AI, LUIS"
-meta_description: "askPio documentation"
+meta_description: "askPio changelog"
 title: 'askPio'
-subtitle: 'Documentation of askPio'
+subtitle: 'Changelogs of askPio'
 content: "https://content.askpio.com/"
 logo: "https://content.askpio.com/logo/logo.png"
 mainurl: 'https://askpio.com'
@@ -23,7 +23,7 @@ google_analytics_id: 'UA-132318762-1'
 navigation: 2
 
 # URL to source code, used in _includes/footer.html
-codeurl: 'https://harshgupta71.github.io/askPio_Documentation'
+codeurl: 'https://harshgupta71.github.io/askPio_changelog'
 
 # Default categories (in order) to appear in the navigation
 sections: [
